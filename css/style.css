@@ -16,6 +16,25 @@
 (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
 */
 
+section {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+input {
+    border: 1px solid #808080;
+    padding: 0.5rem 6rem;
+    border-radius: 8px;
+}
+
+button {
+    padding: 0.5rem 4rem;
+    border-radius: 8px;
+    background-color: darkgreen;
+    color: white;
+}
+
 
 /* Header styles
 (all the styles inside the < header > or < nav > tags)

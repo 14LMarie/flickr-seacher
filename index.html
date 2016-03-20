@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
+<html lang="en" ng-app="SameDomainRequest">
 
 <head>
     <meta charset="UTF-8">
     <title>Flickr Searcher</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/3.1.1/yeti/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
 
 <body ng-controller="myController">
     <section>
         <h1>Flickr Search</h1>
         <input type="text">
-        <button>Submit</button>
+        <button ng-click="getJSONData()"> Submit</button>
     </section>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
-    <script type="text/javascript" src="https://code.angularjs.org/1.2.18/angular-animate.min.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <scrip src="js/app.js"></scrip>
+    <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script> -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- <script src="js/scripts.js"></script>-->
 </body>
 
 </html>
