@@ -16,21 +16,20 @@
     <section>
         <h1>Flickr Search</h1>
         <input type="text" placeholder="Enter Search Here" ng-model="searchTerm" required>
-        <button ng-click="getJSONData()"> Submit</button>
+        <button ng-click="getJSONData()">Submit</button>
         <div ng-show="isSearching">
             <span>Flickr is being queried!</span>
         </div>
     </section>
-    <!-- <section>
-        <p>how many results in angular {{results.photos.photo.total}}</p>
+    <section>
+        <p ng-hide="totalNumResults">Results: {{results.photos.total | number}}</p>
         <ul>
-<li ng-repeat= picture in results.photos.photo><img ng-src="https://farm{{picture.farm}}.staticflickr.com/{{picture.server}}/{{picture.id}}_{{picture.secret}}.jpg" alt="{{picture.title}}" class=""></li>
+            <li ng-repeat="picture in results.photos.photo"><img ng-src="https://farm{{picture.farm}}.staticflickr.com/{{picture.server}}/{{picture.id}}_{{picture.secret}}.jpg" alt="{{picture.title}}" class=""></li>
         </ul>
     </section>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script> -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <!-- <script src="js/scripts.js"></script>-->
 </body>
 
 </html>
